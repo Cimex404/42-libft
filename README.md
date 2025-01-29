@@ -43,6 +43,7 @@ To use this library, include the header file "libft.h" in your source code and c
 -	ft_strlcat
 -	ft_strlcpy
 -	ft_strlen
+-	ft_str_repl_chr
 
 ##	Lists
 -	ft_lstnew
