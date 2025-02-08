@@ -16,6 +16,7 @@
 # include <stdlib.h>
 # include <unistd.h>
 # include <stdbool.h>
+# include <limits.h>
 
 //	List structure
 typedef struct s_list
@@ -76,6 +77,13 @@ char	**ft_split(const char *s, char c);
 char	*ft_strmapi(const char *s, char (*f)(unsigned int, char));
 void	ft_striteri(char *s, void (*f)(unsigned int, char *));
 char	*ft_str_repl_chr(char *str, char old_char, char new_char);
+
+
+//	Math
+int		ft_min(int a, int b);
+int		ft_arrmin(int *arr, int size);
+int		ft_max(int a, int b);
+int		ft_arrmax(int *arr, int size);
 
 
 //	Other functions

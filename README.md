@@ -45,6 +45,12 @@ To use this library, include the header file "libft.h" in your source code and c
 -	ft_strlen
 -	ft_str_repl_chr
 
+##	Math
+-	ft_min
+-	ft_arrmin
+-	ft_max
+-	ft_arrmax
+
 ##	Lists
 -	ft_lstnew
 -	ft_lstadd_front
