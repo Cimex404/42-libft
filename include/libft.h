@@ -84,6 +84,8 @@ int		ft_min(int a, int b);
 int		ft_arrmin(int *arr, int size);
 int		ft_max(int a, int b);
 int		ft_arrmax(int *arr, int size);
+int		ft_abs(int val);
+int		ft_sign(int val);
 
 
 //	Other functions

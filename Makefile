@@ -24,7 +24,7 @@ MEM_SRC = $(addprefix memory/, ft_bzero.c ft_calloc.c ft_memchr.c ft_memcpy.c ft
 OTHER_SRC = $(addprefix other/, ft_putchar_fd.c ft_putendl_fd.c ft_putnbr_fd.c ft_putstr_fd.c ft_tolower.c ft_toupper.c)
 STRING_SRC = $(addprefix string/, ft_split.c ft_strchr.c ft_strdup.c ft_striteri.c ft_strjoin.c ft_strlcat.c \
 			ft_strlcpy.c ft_strlen.c ft_strmapi.c ft_strncmp.c ft_strnstr.c ft_strrchr.c ft_strtrim.c ft_substr.c ft_str_repl_chr.c)
-MATH_SRC = $(addprefix math/, ft_min.c ft_max.c)
+MATH_SRC = $(addprefix math/, ft_min.c ft_max.c ft_sign.c ft_abs.c)
 
 SRC = $(addprefix src/, $(BOOL_SRC) $(CONV_SRC) $(LIST_SRC) $(MEM_SRC) $(OTHER_SRC) $(STRING_SRC) $(MATH_SRC))
 OBJ = $(SRC:.c=.o)

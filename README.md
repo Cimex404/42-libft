@@ -50,6 +50,8 @@ To use this library, include the header file "libft.h" in your source code and c
 -	ft_arrmin
 -	ft_max
 -	ft_arrmax
+-	ft_abs
+-	ft_sign
 
 ##	Lists
 -	ft_lstnew
