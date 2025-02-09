@@ -1,10 +1,20 @@
 #	libft 42
 
-This is a 42 project that provides a library of useful functions for C programming.
-These functions are useful for string manipulation, memory management, and other common tasks.
-
-Running the "make" command will compile the library and create a static library file called "libft.a"
-To use this library, include the header file "libft.h" in your source code and compile the "libft.a" file with your project.
+<div style="display: flex; align-items: center;">
+  <div style="flex: 1; text-align: right;">
+    <img src="https://github.com/Cimex404/42-libft/blob/master/libft_icon.png" align="right" alt="libft Logo" width="150">
+  </div>
+  <div style="flex: 2;">
+    <p>
+      This is a 42 project that provides a library of useful functions for C programming.
+      These functions are useful for string manipulation, memory management, and other common tasks.
+    </p>
+    <p>
+      Running the "make" command will compile the library and create a static library file called "libft.a".
+      To use this library, include the header file "libft.h" in your source code and compile the "libft.a" file with your project.
+    </p>
+  </div>
+</div>
 
 #	Functions included in this library
 
