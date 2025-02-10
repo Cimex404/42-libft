@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jgraf <jgraf@student.42heilbonn.de>        +#+  +:+       +#+        */
+/*   By: jgraf <jgraf@student.42heilbronn.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/08 08:59:52 by jgraf             #+#    #+#             */
-/*   Updated: 2024/10/25 11:26:33 by jgraf            ###   ########.fr       */
+/*   Updated: 2025/02/10 19:18:09 by jgraf            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -95,5 +95,7 @@ void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
 int		ft_toupper(int c);
 int		ft_tolower(int c);
+char	*ft_strupper(char *str);
+char	*ft_strlower(char *str);
 
 #endif

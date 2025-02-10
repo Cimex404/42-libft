@@ -81,3 +81,5 @@
 -	ft_putnbr_fd
 -	ft_tolower
 -	ft_toupper
+- ft_strlower
+- ft_strupper
