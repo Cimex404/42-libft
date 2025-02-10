@@ -6,7 +6,7 @@
 /*   By: jgraf <jgraf@student.42heilbronn.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/09 11:54:16 by jgraf             #+#    #+#             */
-/*   Updated: 2025/02/10 19:15:07 by jgraf            ###   ########.fr       */
+/*   Updated: 2025/02/10 19:25:13 by jgraf            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 //	Converts an uppercase string to uppercase
 
-int	ft_strlower(char *str)
+char	*ft_strlower(char *str)
 {
 	int	i = 0;
 
