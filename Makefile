@@ -6,7 +6,7 @@
 #    By: jgraf <jgraf@student.42heilbronn.de>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/08 08:59:28 by jgraf             #+#    #+#              #
-#    Updated: 2025/02/10 19:18:43 by jgraf            ###   ########.fr        #
+#    Updated: 2025/02/11 19:04:53 by jgraf            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,7 +15,12 @@ CC = gcc
 CFLAGS = -Wall -Wextra -Werror -Iinclude
 AR = ar rcs
 
-#	Mandatory source files
+#	Colors
+GREEN = \033[0;32m
+RED = \033[0;31m
+RESET = \033[0m
+
+#	Source files
 BOOL_SRC = $(addprefix bool/, ft_isalnum.c ft_isalpha.c ft_isascii.c ft_isdigit.c ft_isprint.c)
 CONV_SRC = $(addprefix conversions/, ft_atoi.c ft_itoa.c)
 LIST_SRC = $(addprefix list/, ft_lstadd_back.c ft_lstadd_front.c ft_lstclear.c ft_lstdelone.c ft_lstiter.c \
@@ -34,16 +39,20 @@ OBJ = $(SRC:.c=.o)
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	$(AR) $(NAME) $(OBJ)
+	@$(AR) $(NAME) $(OBJ)
+	@echo "\n$(GREEN)Compilation of libft is complete!$(RESET)"
 
 %.o: %.c
-	$(CC) $(CFLAGS) -c $< -o $@
+	@$(CC) $(CFLAGS) -c $< -o $@
+	@echo "Copiled: $(GREEN)$@$(RESET)"
 
 clean:
-	rm -f $(OBJ)
+	@rm -f $(OBJ)
+	@echo "$(RED)Object files cleaned!$(RESET)"
 
 fclean: clean
-	rm -f $(NAME)
+	@rm -f $(NAME)
+	@echo "$(RED)$(NAME) cleaned!$(RESET)"
 
 re: fclean all
 
