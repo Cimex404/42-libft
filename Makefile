@@ -6,7 +6,7 @@
 #    By: jgraf <jgraf@student.42heilbronn.de>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/08 08:59:28 by jgraf             #+#    #+#              #
-#    Updated: 2025/02/11 19:04:53 by jgraf            ###   ########.fr        #
+#    Updated: 2025/02/11 21:14:29 by jgraf            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -44,7 +44,7 @@ $(NAME): $(OBJ)
 
 %.o: %.c
 	@$(CC) $(CFLAGS) -c $< -o $@
-	@echo "Copiled: $(GREEN)$@$(RESET)"
+	@echo "Compiled: $(GREEN)$@$(RESET)"
 
 clean:
 	@rm -f $(OBJ)
