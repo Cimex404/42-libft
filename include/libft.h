@@ -6,7 +6,7 @@
 /*   By: jgraf <jgraf@student.42heilbronn.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/08 08:59:52 by jgraf             #+#    #+#             */
-/*   Updated: 2025/02/10 19:18:09 by jgraf            ###   ########.fr       */
+/*   Updated: 2025/02/17 21:49:04 by jgraf            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,6 +86,8 @@ int		ft_max(int a, int b);
 int		ft_arrmax(int *arr, int size);
 int		ft_abs(int val);
 int		ft_sign(int val);
+float	ft_sqrt(int nbr);
+float	ft_pow(float base, unsigned int exp);
 
 
 //	Other functions
