@@ -62,6 +62,8 @@
 -	ft_arrmax
 -	ft_abs
 -	ft_sign
+-	ft_sqrt
+-	ft_pow
 
 ##	Lists
 -	ft_lstnew
