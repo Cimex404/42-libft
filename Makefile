@@ -6,7 +6,7 @@
 #    By: jgraf <jgraf@student.42heilbronn.de>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/08 08:59:28 by jgraf             #+#    #+#              #
-#    Updated: 2025/02/17 21:52:30 by jgraf            ###   ########.fr        #
+#    Updated: 2025/02/24 08:32:38 by jgraf            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -31,8 +31,10 @@ OTHER_SRC = $(addprefix other/, ft_putchar_fd.c ft_putendl_fd.c ft_putnbr_fd.c f
 STRING_SRC = $(addprefix string/, ft_split.c ft_strchr.c ft_strdup.c ft_striteri.c ft_strjoin.c ft_strlcat.c \
 			ft_strlcpy.c ft_strlen.c ft_strmapi.c ft_strncmp.c ft_strnstr.c ft_strrchr.c ft_strtrim.c ft_substr.c ft_str_repl_chr.c)
 MATH_SRC = $(addprefix math/, ft_min.c ft_max.c ft_sign.c ft_abs.c ft_sqrt.c ft_pow.c)
+PRINTF_SRC = $(addprefix ft_printf/, main.c ft_printf.c convert_number.c convert_pointer.c putchar.c)
+GNL_SRC = $(addprefix get_next_line/, get_next_line.c get_next_line_utils.c)
 
-SRC = $(addprefix src/, $(BOOL_SRC) $(CONV_SRC) $(LIST_SRC) $(MEM_SRC) $(OTHER_SRC) $(STRING_SRC) $(MATH_SRC))
+SRC = $(addprefix src/, $(BOOL_SRC) $(CONV_SRC) $(LIST_SRC) $(MEM_SRC) $(OTHER_SRC) $(STRING_SRC) $(MATH_SRC) $(PRINTF_SRC) $(GNL_SRC))
 OBJ = $(SRC:.c=.o)
 
 #	Compile
