@@ -108,7 +108,7 @@
 </div>
 
 
-#	Conversions
+##	Conversions
 ```bash
 %s	==>	String
 %c	==>	Character
@@ -120,13 +120,6 @@
 %X	==>	Hex value (uppercase)
 ```
 
-#	How to use it
-You can simply run `make` and the project will compile to a static library called <strong>ft_printf.a</strong> as well as an executable called <strong>ft_printf</strong>.
-The executable will simply run a demonstration of all conversions. 
-<p>
-  To use ft_printf in your own project compile the <strong>ft_printf.a</strong> together with your source files and add the <strong>ft_printf.h</strong> header to your headers.
-</p>
-
 
 
 
@@ -137,21 +130,13 @@ The executable will simply run a demonstration of all conversions.
 #	get_next_line 42
 
 This is a 42 project that teaches about static variable and provides a useful function for the upcoming projects.
-
-By using the "make" command, you can compile the program. The Makefile will also create a TestFile.txt file with the content of the lines to test the program.
-The program takes two arguments "filename" "number of lines"
-Run the program as follows:
-
-```bash
-./get_next_line TestFile.txt 10
-```
+This project simply returns a single line from a file / file descriptor. This makes the parsing for upcoming projects much simpler.
 
 ## How it works
 
-The program will use the "read" function to read the file.
+The program will use the "read" function to read from a file descriptor.
 I will then put the content of the bytes that were read into a buffer.
-The buffer will then be passed to the "append" function.
-The "append" function will then append the content of the buffer to the line.
+The buffer will be passed to the "append" function, which will then append the content of the buffer to the line.
 When the append function reaches a newline character, it will return the line.
 The main function will then print the line.
 
