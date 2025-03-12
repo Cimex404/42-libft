@@ -6,7 +6,7 @@
 /*   By: jgraf <jgraf@student.42heilbronn.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 08:18:53 by jgraf             #+#    #+#             */
-/*   Updated: 2025/02/24 08:30:10 by jgraf            ###   ########.fr       */
+/*   Updated: 2025/03/12 21:47:02 by jgraf            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -89,33 +89,4 @@ char	*get_next_line(int fd)
 			return (NULL);
 	}
 	return (linebuf);
-}
-
-int main(int ac, char **av)
-{
-	const char	*filename;
-	char		*line;
-	int			i;
-	int			fd;
-
-	if (ac != 3)
-	{
-		printf("Error! Need 2 arguments.\n\t<filename> <number of lines>\n");
-		return (0);
-	}
-	filename = av[1];
-	i = atoi(av[2]);
-	fd = open(filename, O_RDONLY);
-	while (i > 0)
-	{
-		line = get_next_line(fd);
-		if (line == NULL)
-			printf("EOF reached or Error!\n");
-		else
-			printf("> %s", line);
-		free(line);
-		i --;
-	}
-	close(fd);
-	return (0);
 }
